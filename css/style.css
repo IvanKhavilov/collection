@@ -1,0 +1,442 @@
+@font-face {
+  font-family: "ProbaPro-Light";
+  src: url("../fonts/Proba_Pro_Light.eot");
+  src: local("☺"), url("../fonts/Proba_Pro_Light.woff") format("woff"), url("../fonts/Proba_Pro_Light.ttf") format("truetype"),
+    url("../fonts/Proba_Pro _Light.svg") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proba-Pro-Regular";
+  src: url("../fonts/proba_pro_regular.eot");
+  src: url("../fonts/proba_pro_regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/proba_pro_regular.woff2") format("woff2"), url("../fonts/proba_pro_regular.woff") format("woff"),
+    url("../fonts/proba_pro_regular.ttf") format("truetype"),
+    url("../fonts/proba_pro_regular.svg#proba_pro_regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Proba-Pro-Regular";
+  font-size: 18px;
+  line-height: 24px;
+  color: #544d46;
+  min-width: 320px;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.container {
+  max-width: 1210px;
+  padding: 0 5px;
+  margin: 0 auto;
+}
+.title__inner {
+  background-image: url(../images/title-bg.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 577px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title {
+  font-family: "Raleway", sans-serif;
+  font-size: calc(40px + 40 * (100vw / 1200));
+  line-height: 120%;
+  font-weight: 100;
+  color: #fff;
+  text-align: center;
+}
+.сollection {
+  padding: 150px 0 70px;
+}
+.collection__descr {
+  font-size: calc(30px + 60 * (100vw / 1210));
+  line-height: 100%;
+  text-transform: uppercase;
+  padding-bottom: 128px;
+  border-bottom: 1px solid #544d46;
+}
+.collection__text-right {
+  display: block;
+  text-align: right;
+}
+.collection__shade {
+  padding-top: 32px;
+}
+.collection__shade-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.collection__title {
+  font-family: "ProbaPro-Light";
+  font-weight: 300;
+  font-size: 45px;
+  line-height: 45px;
+  text-transform: uppercase;
+  max-width: 662px;
+}
+.collection__shade-descr {
+  max-width: 379px;
+  font-size: 18px;
+  line-height: 24px;
+}
+.collection__shade-text + .collection__shade-text {
+  margin-top: 5px;
+}
+.collection__shade-prewiev {
+  position: relative;
+  height: 485px;
+}
+.collection__shade-img1,
+.collection__shade-img2,
+.collection__shade-img3 {
+  position: absolute;
+}
+.collection__shade-img1 {
+  top: -48px;
+  left: 102px;
+  z-index: -1;
+}
+.collection__shade-img2 {
+  top: 154px;
+  left: 590px;
+}
+.collection__shade-img3 {
+  right: 0;
+  top: 20px;
+}
+.lyocell {
+  padding-top: 220px;
+}
+.cloth__box {
+  display: flex;
+  justify-content: space-between;
+}
+.cloth__subtitle {
+  padding-top: 10px;
+  max-width: 482px;
+}
+.cloth__descr-box {
+  padding-left: 92px;
+  max-width: 687px;
+  margin-top: 140px;
+  position: relative;
+}
+.cloth__descr-box::before {
+  content: "";
+  width: 71px;
+  height: 1px;
+  background-color: #544d46;
+  position: absolute;
+  left: 0;
+  top: 7.5px;
+}
+.cloth__descr-text + .cloth__descr-text {
+  margin-top: 7px;
+}
+.lyocell-production {
+  position: relative;
+  padding-top: 177px;
+  height: 824px;
+}
+.lyocell-production__title {
+  font-family: "ProbaPro-Light";
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 40px;
+  max-width: 584px;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 2;
+}
+.lyocell-production__list {
+  counter-reset: li;
+  list-style: none;
+}
+.lyocell-production__item + .lyocell-production__item {
+  margin-top: 32px;
+}
+.lyocell-production__item {
+  padding-left: 56px;
+  position: relative;
+}
+.lyocell-production__item::before {
+  content: counter(li);
+  counter-increment: li;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #544d46;
+  position: absolute;
+  left: 0;
+  top: -8px;
+  font-size: 28px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lyocell-production__descr {
+  opacity: 0.5;
+  max-width: 480px;
+  margin-top: 42px;
+}
+.lyocell-production__img {
+  position: absolute;
+}
+.lyocell-production__img1 {
+  right: 276px;
+  top: 99px;
+  z-index: 1;
+}
+.lyocell-production__img2 {
+  right: 0;
+  z-index: 2;
+  top: 325px;
+}
+.certificate {
+  padding-top: 150px;
+}
+.certificate__inner {
+  padding-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.certificate__title {
+  max-width: 825px;
+  margin: 0 auto;
+}
+.certificate__title-rigth {
+  text-align: right;
+}
+.certificate__img {
+  width: 276px;
+  height: 388px;
+}
+.cotton {
+  padding-top: 200px;
+  position: relative;
+  height: 805px;
+}
+.cotton__img {
+  position: absolute;
+  top: 511px;
+  left: 308px;
+}
+.polyester {
+  position: relative;
+  padding-top: 200px;
+  height: 975px;
+}
+.polyester__img {
+  position: absolute;
+  right: 411px;
+  top: 622px;
+  z-index: -1;
+}
+.collection-preview {
+  padding-top: 168px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.collection-preview__img {
+  margin-top: 32px;
+}
+@media (min-width: 1210px) {
+  .collection__descr {
+    font-size: 90px;
+  }
+}
+@media (max-width: 1060px) {
+  .collection__shade-img1 {
+    left: 0;
+  }
+  .collection__shade-img2 {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .lyocell__img {
+    margin-right: 10px;
+    width: 40%;
+  }
+  .cotton__img1 {
+    margin-right: 10px;
+    width: 40%;
+  }
+}
+@media (max-width: 1035px) {
+  .lyocell-production {
+    height: auto;
+  }
+  .lyocell-production__img1 {
+    position: static;
+  }
+}
+@media (max-width: 835px) {
+  .collection__text-right {
+    display: inline;
+  }
+  .lyocell,
+  .lyocell-production,
+  .certificate,
+  .cotton,
+  .polyester {
+    padding-top: 120px;
+  }
+  .cloth__descr-box {
+    padding-left: 0;
+    margin-top: 40px;
+  }
+  .cloth__descr-box::before {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .title {
+    font-size: calc(40px + (40 + (40 * 0.7)) * ((100vw - 320px) / 1200));
+  }
+  .сollection {
+    padding: 80px 0 35px;
+  }
+  .collection__descr {
+    font-size: calc(30px + (60 + (60 * 0.7)) * ((100vw - 320px) / 1210));
+    padding-bottom: 40px;
+  }
+  .collection__title {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .cloth__box {
+    flex-direction: column-reverse;
+  }
+  .polyester .cloth__box {
+    flex-direction: column;
+  }
+  .lyocell-production__title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .cotton,
+  .polyester {
+    height: auto;
+  }
+  .cloth__image {
+    width: 75%;
+    margin: 10px auto;
+  }
+  .cotton__img {
+    position: static;
+  }
+  .polyester__img {
+    position: static;
+  }
+  .collection-preview {
+    justify-content: space-around;
+  }
+}
+@media (max-width: 720px) {
+  .lyocell-production__img2 {
+    position: static;
+  }
+}
+@media (max-width: 700px) {
+  .collection__shade-box {
+    display: inline-block;
+  }
+  .collection__title {
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .collection__shade-descr {
+    max-width: 100%;
+  }
+  .collection__shade-prewiev {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: auto;
+  }
+  .collection__shade-img1,
+  .collection__shade-img2,
+  .collection__shade-img3 {
+    position: static;
+    margin-top: 10px;
+  }
+  .collection__shade-img2 {
+    transform: translateX(0);
+    height: 329px;
+  }
+}
+@media (max-width: 640px) {
+  .lyocell__img {
+    margin: 0 auto;
+  }
+  .cloth__descr-box {
+    margin-bottom: 15px;
+  }
+  .lyocell-production__img,
+  .cloth__image {
+    display: block;
+    margin: 10px auto 0;
+  }
+  .certificate__inner {
+    justify-content: space-around;
+  }
+}
+@media (max-width: 500px) {
+  .title__inner {
+    height: 360px;
+  }
+  .collection__title {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .fancybox-inner {
+    transform: scale(1);
+  }
+  .fancybox-close {
+    top: -18px;
+    right: -18px;
+  }
+  .collection-preview {
+    padding-top: 50px;
+  }
+}
+@media (max-width: 425px) {
+  .container {
+    padding: 0 10px;
+  }
+  .collection__shade-img1,
+  .collection__shade-img2,
+  .collection__shade-img3,
+  .lyocell__img,
+  .lyocell-production__img,
+  .collection-preview__img,
+  .cloth__image {
+    width: 100%;
+  }
+  .collection__shade-img2 {
+    height: 510px;
+  }
+  .certificate__title-rigth {
+    text-align: center;
+  }
+}
+@media (max-width: 375px) {
+  .collection__shade-img2 {
+    height: 425px;
+  }
+}
